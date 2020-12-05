@@ -1,0 +1,368 @@
+{
+    "arrive": [
+        {
+            "data_type": "arrive",
+            "f_airline": "土耳其航空公司 (Turkey)",
+            "f_ident": "THY3",
+            "f_type": "Boeing Dreamliner (Srs.9) (双发)",
+            "f_from": "Istanbul Airport (Istanbul) - IST / LTFM",
+            "f_depart": "星期六 08:52,+03",
+            "f_arrive": "星期六 11:01,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国航空公司",
+            "f_ident": "AAL2556",
+            "f_type": "Boeing 737-800 (双发)",
+            "f_from": "Charlotte/Douglas Intl (Charlotte, NC) - KCLT",
+            "f_depart": "星期六 09:43,EST",
+            "f_arrive": "星期六 10:57,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU1084",
+            "f_type": "Airbus A320 (双发)",
+            "f_from": "Orlando Intl (Orlando, FL) - KMCO",
+            "f_depart": "星期六 08:19,EST",
+            "f_arrive": "星期六 10:18,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "韩亚航空公司 (Republic Of Korea)",
+            "f_ident": "AAR222",
+            "f_type": "Airbus A350-900 (双发)",
+            "f_from": "Incheon Int'l (韩国 首尔仁川 KR) - ICN / RKSI",
+            "f_depart": "星期六 11:06,KST",
+            "f_arrive": "星期六 10:13,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1854",
+            "f_type": "Boeing 737-900 (双发)",
+            "f_from": "Luis Munoz Marin Intl (San Juan, PR) - SJU / TJSJ",
+            "f_depart": "星期六 07:11,AST",
+            "f_arrive": "星期六 10:04,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1942",
+            "f_type": "Boeing 737-900 (双发)",
+            "f_from": "Las Americas (圣多明各 DO) - SDQ / MDSD",
+            "f_depart": "星期六 07:07,AST",
+            "f_arrive": "星期六 09:45,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL2126",
+            "f_type": "Airbus A321 (双发)",
+            "f_from": "Orlando Intl (Orlando, FL) - KMCO",
+            "f_depart": "星期六 07:43,EST",
+            "f_arrive": "星期六 09:41,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL779",
+            "f_type": "Airbus A321 (双发)",
+            "f_from": "Fort Lauderdale Intl (Fort Lauderdale, FL) - KFLL",
+            "f_depart": "星期六 07:25,EST",
+            "f_arrive": "星期六 09:37,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL2111",
+            "f_type": "Airbus A319 (双发)",
+            "f_from": "Tampa Intl (Tampa, FL) - KTPA",
+            "f_depart": "星期六 07:18,EST",
+            "f_arrive": "星期六 09:28,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "日本航空公司 (Japan)",
+            "f_ident": "JAL6",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_from": "Tokyo Int'l (Haneda) (东京 JP) - HND / RJTT",
+            "f_depart": "星期六 11:27,JST",
+            "f_arrive": "星期六 09:25,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1750",
+            "f_type": "Airbus A320 (双发)",
+            "f_from": "Miami Intl (Miami, FL) - KMIA",
+            "f_depart": "星期六 07:04,EST",
+            "f_arrive": "星期六 09:18,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "大韩航空公司 (Republic Of Korea)",
+            "f_ident": "KAL81",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_from": "Incheon Int'l (韩国 首尔仁川 KR) - ICN / RKSI",
+            "f_depart": "星期六 10:11,KST",
+            "f_arrive": "星期六 09:15,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "大韩航空公司 (Republic Of Korea)",
+            "f_ident": "KAL9015",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_from": "Incheon Int'l (韩国 首尔仁川 KR) - ICN / RKSI",
+            "f_depart": "星期六 10:11,KST",
+            "f_arrive": "星期六 09:15,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "中国国际航空公司 (China)",
+            "f_ident": "CCA591",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_from": "Beijing Capital Int'l (北京 北京首都 CN) - PEK / ZBAA",
+            "f_depart": "星期六 09:17,CST",
+            "f_arrive": "星期六 09:12,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "大韩航空公司 (Republic Of Korea)",
+            "f_ident": "KAL249",
+            "f_type": "BOEING 777-200LR (双发)",
+            "f_from": "Anchorage Intl (Anchorage, AK) - PANC",
+            "f_depart": "星期五 22:59,AKST",
+            "f_arrive": "星期六 09:00,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1993",
+            "f_type": "Boeing 737-900 (双发)",
+            "f_from": "Cibao Int'l (Santiago Municipal) (Santiago) - STI / MDST",
+            "f_depart": "星期六 06:26,AST",
+            "f_arrive": "星期六 08:58,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "全日空航空公司 (Japan)",
+            "f_ident": "ANA110",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_from": "Tokyo Int'l (Haneda) (东京 JP) - HND / RJTT",
+            "f_depart": "星期六 10:47,JST",
+            "f_arrive": "星期六 08:56,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU2101",
+            "f_type": "Airbus A320 (双发)",
+            "f_from": "Buffalo Niagara Intl (Buffalo, NY) - KBUF",
+            "f_depart": "星期六 07:58,EST",
+            "f_arrive": "星期六 08:53,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "ABX Air \"Abex\" (Wilmington, OH)",
+            "f_ident": "ABX552",
+            "f_type": "Boeing 767-300 (双发)",
+            "f_from": "Cincinnati/Northern Kentucky International Airport (Hebron, KY) - KCVG",
+            "f_depart": "星期六 06:55,EST",
+            "f_arrive": "星期六 08:25,EST"
+        },
+        {
+            "data_type": "arrive",
+            "f_airline": "Republic \"Brickyard\" (Indianapolis, Indiana)",
+            "f_ident": "RPA5761",
+            "f_type": "Embraer ERJ 175 (双发)",
+            "f_from": "Buffalo Niagara Intl (Buffalo, NY) - KBUF",
+            "f_depart": "星期六 07:18,EST",
+            "f_arrive": "星期六 08:18,EST"
+        }
+    ],
+    "departure": [],
+    "enroute": [],
+    "scheduled": [
+        {
+            "data_type": "scheduled",
+            "f_airline": "全日空航空公司 (Japan)",
+            "f_ident": "ANA9",
+            "f_type": "BOEING 777-300ER (双发)",
+            "f_to": "Narita Int'l (日本 东京成田 JP) - NRT / RJAA",
+            "f_depart": "星期六 10:45,EST",
+            "f_arrive": "星期日 14:50,JST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "大韩航空公司 (Republic Of Korea)",
+            "f_ident": "KAL250",
+            "f_type": "BOEING 777-200LR (双发)",
+            "f_to": "Incheon Int'l (韩国 首尔仁川 KR) - ICN / RKSI",
+            "f_depart": "星期六 10:50,EST",
+            "f_arrive": "星期日 14:59,KST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU1409",
+            "f_type": "Airbus A321neo (双发)",
+            "f_to": "Las Americas (圣多明各 DO) - SDQ / MDSD",
+            "f_depart": "星期六 10:59,EST",
+            "f_arrive": "星期六 15:37,AST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "Alaska Airlines \"Alaska\"",
+            "f_ident": "ASA160",
+            "f_type": "Airbus A321neo (双发)",
+            "f_to": "Seattle-Tacoma Intl (Seattle, WA) - KSEA",
+            "f_depart": "星期六 11:00,EST",
+            "f_arrive": "星期六 13:32,PST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU301",
+            "f_type": "Airbus A321 (双发)",
+            "f_to": "Fort Lauderdale Intl (Fort Lauderdale, FL) - KFLL",
+            "f_depart": "星期六 11:00,EST",
+            "f_arrive": "星期六 13:42,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU951",
+            "f_type": "Airbus A320 (双发)",
+            "f_to": "Cancun Int'l (坎康 MX) - CUN / MMUN",
+            "f_depart": "星期六 11:00,EST",
+            "f_arrive": "星期六 14:55,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU2003",
+            "f_type": "Airbus A321neo (双发)",
+            "f_to": "Luis Munoz Marin Intl (San Juan, PR) - SJU / TJSJ",
+            "f_depart": "星期六 11:00,EST",
+            "f_arrive": "星期六 15:42,AST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "中国国际航空公司 (China)",
+            "f_ident": "CCA592",
+            "f_type": "",
+            "f_to": "Beijing Capital Int'l (北京 北京首都 CN) - PEK / ZBAA",
+            "f_depart": "星期六 11:10,EST",
+            "f_arrive": "星期日 15:10,CST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU789",
+            "f_type": "Airbus A320 (双发)",
+            "f_to": "Orlando Intl (Orlando, FL) - KMCO",
+            "f_depart": "星期六 11:14,EST",
+            "f_arrive": "星期六 14:06,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1371",
+            "f_type": "Airbus A320 (双发)",
+            "f_to": "Miami Intl (Miami, FL) - KMIA",
+            "f_depart": "星期六 11:15,EST",
+            "f_arrive": "星期六 13:52,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL719",
+            "f_type": "Boeing 737-900 (双发)",
+            "f_to": "Salt Lake City Intl (Salt Lake City, UT) - KSLC",
+            "f_depart": "星期六 11:20,EST",
+            "f_arrive": "星期六 13:53,MST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL644",
+            "f_type": "Boeing 757-200 (双发)",
+            "f_to": "Cancun Int'l (坎康 MX) - CUN / MMUN",
+            "f_depart": "星期六 11:20,EST",
+            "f_arrive": "星期六 15:08,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU855",
+            "f_type": "Airbus A320 (双发)",
+            "f_to": "Providenciales Int'l (Providenciales) - PLS / MBPV",
+            "f_depart": "星期六 11:29,EST",
+            "f_arrive": "星期六 14:59,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "Cobalt Air \"CHRONOS\" (Portsmouth, NH)",
+            "f_ident": "CNS145",
+            "f_type": "Beechcraft Beechjet (双发)",
+            "f_to": "Boca Raton (Boca Raton, FL) - KBCT",
+            "f_depart": "星期六 11:30,EST",
+            "f_arrive": "星期六 14:00,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU1935",
+            "f_type": "Airbus A321 (双发)",
+            "f_to": "Port-au-Prince Intl (Port-au-Prince) - PAP / MTPP",
+            "f_depart": "星期六 11:30,EST",
+            "f_arrive": "星期六 15:16,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1752",
+            "f_type": "Airbus A321 (双发)",
+            "f_to": "Orlando Intl (Orlando, FL) - KMCO",
+            "f_depart": "星期六 11:35,EST",
+            "f_arrive": "星期六 13:59,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL1695",
+            "f_type": "Airbus A321 (双发)",
+            "f_to": "Fort Lauderdale Intl (Fort Lauderdale, FL) - KFLL",
+            "f_depart": "星期六 11:39,EST",
+            "f_arrive": "星期六 14:16,EST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "美国达美航空公司",
+            "f_ident": "DAL326",
+            "f_type": "Boeing 767-300 (双发)",
+            "f_to": "Los Angeles Intl (Los Angeles, CA) - KLAX",
+            "f_depart": "星期六 11:45,EST",
+            "f_arrive": "星期六 13:57,PST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU637",
+            "f_type": "Airbus A320 (双发)",
+            "f_to": "Cibao Int'l (Santiago Municipal) (Santiago) - STI / MDST",
+            "f_depart": "星期六 11:45,EST",
+            "f_arrive": "星期六 16:19,AST"
+        },
+        {
+            "data_type": "scheduled",
+            "f_airline": "JetBlue \"JetBlue\"",
+            "f_ident": "JBU523",
+            "f_type": "Airbus A321 (双发)",
+            "f_to": "Los Angeles Intl (Los Angeles, CA) - KLAX",
+            "f_depart": "星期六 11:47,EST",
+            "f_arrive": "星期六 14:27,PST"
+        }
+    ]
+}
