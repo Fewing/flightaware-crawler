@@ -29,12 +29,12 @@ class KjfkSpider(scrapy.Spider):
         for child in table.contents[1:]:
             flight = FlightawareItem()
             flight['data_type'] = 'arrive'
-            flight['f_airline'] = child.contents[0].span['title']
-            flight['f_ident'] = child.contents[0].span.a.text
-            flight['f_type'] = child.contents[1].span['title']
-            flight['f_from'] = child.contents[2].span['title']
-            flight['f_depart'] = child.contents[3].text.replace('\xa0', ',')
-            flight['f_arrive'] = child.contents[4].text.replace('\xa0', ',')
+            flight['airline'] = child.contents[0].span['title']
+            flight['ident'] = child.contents[0].span.a.text
+            flight['type'] = child.contents[1].span['title']
+            flight['origin'] = child.contents[2].span['title']
+            flight['departure_time'] = child.contents[3].text.replace('\xa0', ',')
+            flight['arrive_time'] = child.contents[4].text.replace('\xa0', ',')
             yield flight
         next_page = soup.find(text='后20条')
         if next_page != None:                      #如果有下一页则继续爬取
@@ -48,12 +48,12 @@ class KjfkSpider(scrapy.Spider):
         for child in table.contents[1:]:
             flight = FlightawareItem()
             flight['data_type'] = 'departure'
-            flight['f_airline'] = child.contents[0].span['title']
-            flight['f_ident'] = child.contents[0].span.a.text
-            flight['f_type'] = child.contents[1].span['title']
-            flight['f_to'] = child.contents[2].span['title']
-            flight['f_depart'] = child.contents[3].text.replace('\xa0', ',')
-            flight['f_arrive'] = child.contents[4].text.replace('\xa0', ',')
+            flight['airline'] = child.contents[0].span['title']
+            flight['ident'] = child.contents[0].span.a.text
+            flight['type'] = child.contents[1].span['title']
+            flight['destination'] = child.contents[2].span['title']
+            flight['departure_time'] = child.contents[3].text.replace('\xa0', ',')
+            flight['arrive_time'] = child.contents[4].text.replace('\xa0', ',')
             yield flight
         next_page = soup.find(text='后20条')
         if next_page != None:
@@ -67,12 +67,12 @@ class KjfkSpider(scrapy.Spider):
         for child in table.contents[1:]:
             flight = FlightawareItem()
             flight['data_type'] = 'enroute'
-            flight['f_airline'] = child.contents[0].span['title']
-            flight['f_ident'] = child.contents[0].span.a.text
-            flight['f_type'] = child.contents[1].span['title']
-            flight['f_from'] = child.contents[2].span['title']
-            flight['f_depart'] = child.contents[3].text.replace('\xa0', ',')
-            flight['f_arrive'] = child.contents[4].text.replace('\xa0', ',')
+            flight['airline'] = child.contents[0].span['title']
+            flight['ident'] = child.contents[0].span.a.text
+            flight['type'] = child.contents[1].span['title']
+            flight['origin'] = child.contents[2].span['title']
+            flight['departure_time'] = child.contents[3].text.replace('\xa0', ',')
+            flight['arrive_time'] = child.contents[4].text.replace('\xa0', ',')
             yield flight
         next_page = soup.find(text='后20条')
         if next_page != None:
@@ -86,12 +86,12 @@ class KjfkSpider(scrapy.Spider):
         for child in table.contents[1:]:
             flight = FlightawareItem()
             flight['data_type'] = 'scheduled'
-            flight['f_airline'] = child.contents[0].span['title']
-            flight['f_ident'] = child.contents[0].span.a.text
-            flight['f_type'] = child.contents[1].span['title']
-            flight['f_to'] = child.contents[2].span['title']
-            flight['f_depart'] = child.contents[3].text.replace('\xa0', ',')
-            flight['f_arrive'] = child.contents[4].text.replace('\xa0', ',')
+            flight['airline'] = child.contents[0].span['title']
+            flight['ident'] = child.contents[0].span.a.text
+            flight['type'] = child.contents[1].span['title']
+            flight['destination'] = child.contents[2].span['title']
+            flight['departure_time'] = child.contents[3].text.replace('\xa0', ',')
+            flight['arrive_time'] = child.contents[4].text.replace('\xa0', ',')
             yield flight
         next_page = soup.find(text='后20条')
         if next_page != None:
