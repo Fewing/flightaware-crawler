@@ -36,7 +36,7 @@ class KjfkSpider(scrapy.Spider):
                 weather['wind_dir'] = child.contents[3].text
                 weather['wind_speed'] = child.contents[4].text
                 weather['type'] = child.contents[5].text
-                weather['high_agl'] = child.contents[6].text
+                weather['height_agl'] = child.contents[6].text
                 weather['visibility'] = child.contents[7].text
                 weather['remarks'] = child.contents[8].text
                 yield weather
