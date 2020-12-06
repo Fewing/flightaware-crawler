@@ -10,7 +10,6 @@ class KjfkSpider(scrapy.Spider):
     name = 'airport'
     airport = None
     allowed_domains = ['zh.flightaware.com', 'flightaware.com']
-    
 
     def __init__(self, airport='KJFK', *args, **kwargs):
         super(KjfkSpider, self).__init__(*args, **kwargs)
@@ -56,22 +55,25 @@ class KjfkSpider(scrapy.Spider):
     def arrive(self, response: Response):
         soup = BeautifulSoup(response.text, 'html.parser')  # 使用beautifulsoup解析
         try:
-            table = soup.find(
-                id='slideOutPanel').contents[1].contents[3].contents[1].contents[1].contents[2]  # 定位到表格
-            for child in table.contents[1:]:
+            table = soup.find(class_='prettyTable fullWidth')  # 定位到表格
+            for child in table.contents[1:]:  # 循环添加航班
                 flight = FlightawareItem()
                 flight['data_type'] = 'arrive'
-                flight['airline'] = child.contents[0].span['title']
+                if child.contents[0].span != None:
+                    flight['airline'] = child.contents[0].span['title']
                 flight['ident'] = child.contents[0].span.a.text
-                flight['type'] = child.contents[1].span['title']
-                flight['origin'] = child.contents[2].span['title']
+                if child.contents[1].span != None:
+                    flight['type'] = child.contents[1].span['title']
+                if child.contents[2].span != None:
+                    flight['origin'] = child.contents[2].span['title']
                 flight['departure_time'] = child.contents[3].text.replace(
                     '\xa0', ',')
                 flight['arrive_time'] = child.contents[4].text.replace(
                     '\xa0', ',')
                 yield flight
         except:
-            self.logger.error('Parse error called on %s', response.url)
+            self.logger.error('Parse error called on %s',
+                              response.url)  # 出现错错误则使用日志提示
         finally:
             next_page = soup.find(text='后20条')
             if next_page != None:  # 如果有下一页则继续爬取
@@ -79,17 +81,19 @@ class KjfkSpider(scrapy.Spider):
                 yield scrapy.Request(url=next_url, callback=self.arrive)
 
     def departure(self, response: Response):
-        soup = BeautifulSoup(response.text, 'html.parser')  # 使用beautifulsoup解析
+        soup = BeautifulSoup(response.text, 'html.parser')
         try:
-            table = soup.find(
-                id='slideOutPanel').contents[1].contents[3].contents[3].contents[1].contents[2]  # 定位到表格
+            table = soup.find(class_='prettyTable fullWidth')
             for child in table.contents[1:]:
                 flight = FlightawareItem()
                 flight['data_type'] = 'departure'
-                flight['airline'] = child.contents[0].span['title']
+                if child.contents[0].span != None:
+                    flight['airline'] = child.contents[0].span['title']
                 flight['ident'] = child.contents[0].span.a.text
-                flight['type'] = child.contents[1].span['title']
-                flight['destination'] = child.contents[2].span['title']
+                if child.contents[1].span != None:
+                    flight['type'] = child.contents[1].span['title']
+                if child.contents[2].span != None:
+                    flight['destination'] = child.contents[2].span['title']
                 flight['departure_time'] = child.contents[3].text.replace(
                     '\xa0', ',')
                 flight['arrive_time'] = child.contents[4].text.replace(
@@ -104,17 +108,19 @@ class KjfkSpider(scrapy.Spider):
                 yield scrapy.Request(url=next_url, callback=self.departure)
 
     def enroute(self, response: Response):
-        soup = BeautifulSoup(response.text, 'html.parser')  # 使用beautifulsoup解析
+        soup = BeautifulSoup(response.text, 'html.parser')
         try:
-            table = soup.find(
-                id='slideOutPanel').contents[1].contents[3].contents[3].contents[1].contents[2]  # 定位到表格
+            table = soup.find(class_='prettyTable fullWidth')
             for child in table.contents[1:]:
                 flight = FlightawareItem()
                 flight['data_type'] = 'enroute'
-                flight['airline'] = child.contents[0].span['title']
+                if child.contents[0].span != None:
+                    flight['airline'] = child.contents[0].span['title']
                 flight['ident'] = child.contents[0].span.a.text
-                flight['type'] = child.contents[1].span['title']
-                flight['origin'] = child.contents[2].span['title']
+                if child.contents[1].span != None:
+                    flight['type'] = child.contents[1].span['title']
+                if child.contents[2].span != None:
+                    flight['origin'] = child.contents[2].span['title']
                 flight['departure_time'] = child.contents[3].text.replace(
                     '\xa0', ',')
                 flight['arrive_time'] = child.contents[4].text.replace(
@@ -129,17 +135,19 @@ class KjfkSpider(scrapy.Spider):
                 yield scrapy.Request(url=next_url, callback=self.enroute)
 
     def scheduled(self, response: Response):
-        soup = BeautifulSoup(response.text, 'html.parser')  # 使用beautifulsoup解析
+        soup = BeautifulSoup(response.text, 'html.parser')
         try:
-            table = soup.find(
-                id='slideOutPanel').contents[1].contents[3].contents[1].contents[1].contents[2]  # 定位到表格
+            table = soup.find(class_='prettyTable fullWidth')
             for child in table.contents[1:]:
                 flight = FlightawareItem()
                 flight['data_type'] = 'scheduled'
-                flight['airline'] = child.contents[0].span['title']
+                if child.contents[0].span != None:
+                    flight['airline'] = child.contents[0].span['title']
                 flight['ident'] = child.contents[0].span.a.text
-                flight['type'] = child.contents[1].span['title']
-                flight['destination'] = child.contents[2].span['title']
+                if child.contents[1].span != None:
+                    flight['type'] = child.contents[1].span['title']
+                if child.contents[2].span != None:
+                    flight['destination'] = child.contents[2].span['title']
                 flight['departure_time'] = child.contents[3].text.replace(
                     '\xa0', ',')
                 flight['arrive_time'] = child.contents[4].text.replace(

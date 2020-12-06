@@ -24,7 +24,7 @@ class WeatherItem(scrapy.Item):
     flight_rules = scrapy.Field() #飞行准则
     wind_dir = scrapy.Field() #风向
     wind_speed = scrapy.Field() #风速
-    type = scrapy.Field() #不知道是啥
-    high_agl = scrapy.Field() #不知道是啥
+    type = scrapy.Field() #航空例行天气报告等级
+    height_agl = scrapy.Field() #不知道是啥
     visibility = scrapy.Field() #能见度
     remarks = scrapy.Field() #备注
