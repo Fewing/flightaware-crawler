@@ -13,6 +13,8 @@ SPIDER_MODULES = ['flightaware.spiders']
 NEWSPIDER_MODULE = 'flightaware.spiders'
 
 
+LOG_LEVEL='INFO'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'flightaware (+http://www.yourdomain.com)'
 
